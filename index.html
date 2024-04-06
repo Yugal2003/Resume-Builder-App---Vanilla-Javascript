@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon for resume.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <title>Resume Project</title>
+</head>
+<body>
+    <!-- main container start -->
+    <div class="main">
+        <!-- navbar start -->
+        <div class="navbar">
+            <img src="./img/newspaper.JPG" alt="" height="30">
+            <button onclick="generatePDF()" class="download_pdf">
+                <img src="./img/down_img_photo.JPG" id="img_color" height="18" alt=""><span class="pdf">Download PDF</span>
+            </button>
+        </div>
+        <!-- navbar end -->
+        <div class="two_section">
+            <!-- template-type start -->
+            <div class="template-type">
+                <h4 class="template-type-name">Template Type</h4>
+                <select name="" id="select_two_items" >
+                    <!-- <option value="Zero" selected>Select Option</option> -->
+                    <option value="Two">Two-Column</option>
+                    <option selected value="One">Minimalist </option>
+                </select><br><br>
+                <label for="" class="header_color">Header Color</label><br>
+                <input type="color" name="" class="colorid" value="#A52A2A"><br><br>
+                <label for="" class="header_text">Header-Text Color</label><br>
+                <input type="color" name="" class="textid" value="#FFFFFF"><br>
+                <!-- personal detail form start --><br>
+                <form action="">
+                    <span class="personal_details" for="">Personal Details</span><br>
+                    <input class="personal_details_inputs" autocomplete="off" id="names" type="text" placeholder="Name"><br>
+                    <input class="personal_details_inputs" autocomplete="off" id="email_id" type="text" placeholder="E-mail ID"><br>
+                    <input class="personal_details_inputs" autocomplete="off" id="phone_number" type="number" placeholder="Phone"><br>
+                    <input class="personal_details_inputs" autocomplete="off" id="citys" type="text" placeholder="City, Country">
+                </form>
+                <!-- personal detail form end -->
+                <!-- professional Details form start --><br>
+                <form action="">
+                    <span class="profess_details" for="">Professional Details</span><br>
+                    <input type="text" autocomplete="off" placeholder="Wanted job Title" id="profess_title"><br>
+                    <textarea class="profess_details_inputs" autocomplete="off" cols="40" rows="8" placeholder="Professional Summary"></textarea><br>
+                    <input type="text" autocomplete="off" placeholder="Skills" id="pro_skill">
+                </form>
+                <!-- professional Details form end -->
+
+                <!-- button section start -->
+                <!-- date add employment start -->
+                <button class="add_employee">Add Employment</button>
+                <div class="add_employee_form">
+                    <!-- <label>Start</label>
+                    <input type="date" id="start_date_add_employee">
+                    <label>End</label>
+                    <input type="date" id="end_date_add_employee">
+                    <input type="text" id="job_title_employeement" placeholder="job Title">
+                    <input type="text" id="employer_employeement" placeholder="Employer">
+                    <textarea id="employment_description" cols="40" rows="8" placeholder="Description"></textarea> -->
+                </div>
+                <!-- date add employment end -->
+
+                <!-- date add project start  -->
+                <button class="add_project">Add Project</button>
+                <div class="add_project_form">
+                    <!-- <label>Start</label>
+                    <input type="date" id="start_date_add_project">
+                    <label>End</label>
+                    <input type="date" id="end_date_add_project">
+                    <input type="text" id="project_title" placeholder="Project Title">
+                    <textarea id="project_description" cols="40" rows="8" placeholder="Description"></textarea> -->
+                </div>
+                <!-- date add project end -->
+
+                <!-- add education start  -->
+                <h4 class="edu_text_color">Educational Background</h4>
+                <button class="add_education">Add Education</button>
+                <div class="add_education_form">
+                    <!-- <label>Start</label>
+                    <input type="date" id="start_date_add_education">
+                    <label>End</label>
+                    <input type="date" id="end_date_add_education">
+                    <input type="text" id="education_qualification" placeholder="Qualification">
+                    <input type="text" id="education_school" placeholder="School/College">
+                    <textarea id="education_description" cols="40" rows="8" placeholder="Description"></textarea> -->
+                </div>
+                <!-- add education end -->
+                <!-- button section end -->
+            </div>
+            <!-- template-type end -->
+
+            <div id="showOne" class="myDiv" style="display: none;">
+                    <!-- brown color box start -->
+                    <div class="brown_color_box">
+                        <div class="nameAndSde">
+                          <h2 class="heading1"></h2>
+                          <h4 class="heading3"></h4>
+                        </div>
+                        <div class="PhoneEmailLoca">
+                            <img src="https://cdn-icons-png.flaticon.com/128/159/159832.png" class="gap_into_detail" height="17" alt="">
+                            <span class="personal_detail_phone_data"></span><br>
+                            <img src="https://cdn-icons-png.flaticon.com/128/646/646094.png" class="gap_into_detail" height="17" alt="">
+                            <span class="personal_detail_email_data"></span><br>
+                            <img src="https://cdn-icons-png.flaticon.com/128/2875/2875433.png" class="gap_into_detail" height="17" alt="">
+                            <span class="personal_detail_country_data"></span><br>
+                        </div>
+                    </div>
+                    <!-- brown color box end -->
+    
+                    <!-- skill And Summary part start-->
+                    <div class="skillAndSummarypart">
+                        <div class="summary_back_color">
+                            <h3 class="font_size_increase">SUMMARY</h3>
+                            <hr class="summary_hr_size_increase">
+                            <div class="profeessional_textarea_data">
+                                
+                            </div>
+                            <h3 class="font_size_increase">SKILLS</h3>
+                            <hr class="skill_hr_size_increase">
+                            <div class="profressional_form_skills_data">
+    
+                            </div>
+                            <!-- PROFESSIONAL EXPERIENCE container start -->
+                            <h3 class="font_size_increase">PROFESSIONAL EXPERIENCE</h3>
+                            <hr class="summary_hr_size_increase">
+                            <div class="profess_experience_summary">
+                                <!-- <div class="flex_data">
+                                    <ul>
+                                        <li class="pasteText_job_title_employeement">SDE at Amazon</li>
+                                    </ul> 
+                                    <span>
+                                        <span class="start_Date">11-04-2023</span>
+                                        <span class="end_Date">11-04-2023</span>
+                                    </span>
+                                </div><br>
+                                <label class="pasteText_employer">SDE</label><br><br>
+                                <label class="pasteText_description_employeement">can Write Anything</label> -->
+                            </div>
+                            <!-- PROFESSIONAL EXPERIENCE container end -->
+                            <!-- project container start -->
+                            <h3 class="font_size_increase" id="projects_top">PROJECTS</h3>
+                            <hr class="summary_hr_size_increase">
+                            <div class="projects_summary">
+                                
+                            </div>
+                            <!-- project container end -->
+                            <!-- education container start -->
+                            <h3 class="font_size_increase">EDUCATION</h3>
+                            <hr class="summary_hr_size_increase">
+                            <div class="education_summary">
+                                
+                            </div>
+                            <!-- education container end -->
+                        </div>
+                    </div>
+                    <!-- skill And Summary part end-->
+            </div>
+            <!-- dataOfEmployee start -->
+            <div id="showTwo" style="display: none;" class="dataOfEmployee  myDiv" >
+                <!-- brown color box start -->
+                <div class="brown_color_box">
+                    <h2 class="heading1"></h2>
+                    <h4 class="heading3"></h4>
+                </div>
+                <!-- brown color box end -->
+
+                <!-- skill And Summary part start-->
+                <div class="skillAndSummarypart">
+                    <div class="skill_back_color">
+                        <h3 class="font_size_increase">SKILLS</h3>
+                        <hr class="skill_hr_size_increase">
+                        <div class="profressional_form_skills_data">
+
+                        </div>
+                        <h3 class="font_size_increase">CONTACT</h3>
+                        <hr class="skill_hr_size_increase">
+                        <img src="https://cdn-icons-png.flaticon.com/128/159/159832.png" class="gap_into_detail" height="17" alt="">
+                        <span class="personal_detail_phone_data"></span><br>
+                        <img src="https://cdn-icons-png.flaticon.com/128/646/646094.png" class="gap_into_detail" height="17" alt="">
+                        <span class="personal_detail_email_data"></span><br>
+                        <img src="https://cdn-icons-png.flaticon.com/128/2875/2875433.png" class="gap_into_detail" height="17" alt="">
+                        <span class="personal_detail_country_data"></span><br>
+                    </div>
+                    <div class="summary_back_color">
+                        <h3 class="font_size_increase">SUMMARY</h3>
+                        <hr class="summary_hr_size_increase">
+                        <div class="profeessional_textarea_data">
+                            
+                        </div>
+                        <!-- PROFESSIONAL EXPERIENCE container start -->
+                        <h3 class="font_size_increase">PROFESSIONAL EXPERIENCE</h3>
+                        <hr class="summary_hr_size_increase">
+                        <div class="profess_experience_summary">
+                            <!-- <div class="flex_data">
+                                <ul>
+                                    <li class="pasteText_job_title_employeement">SDE at Amazon</li>
+                                </ul> 
+                                <span>
+                                    <span id="start_Date">11-04-2023</span>
+                                    <span id="end_Date">11-04-2023</span>
+                                </span>
+                            </div><br>
+                            <label class="pasteText_employer">SDE</label><br><br>
+                            <label class="pasteText_description_employeement">can Write Anything</label> -->
+                        </div>
+                        <!-- PROFESSIONAL EXPERIENCE container end -->
+
+                        <!-- project container start -->
+                        <h3 class="font_size_increase" id="projects_top">PROJECTS</h3>
+                        <hr class="summary_hr_size_increase">
+                        <div class="projects_summary">
+                            <!-- <div class="flex_data">
+                                <ul>
+                                    <li class="pasteText_job_title_project">SDE at Amazon</li>
+                                </ul> 
+                                <span>
+                                    <span id="start_Date_project">11-04-2023</span>
+                                    <span id="end_Date_project">11-04-2023</span>
+                                </span>
+                            </div><br>
+                            <label class="pasteText_project">SDE</label><br><br> -->
+                        </div>
+                        <!-- project container end -->
+                        <!-- education container start -->
+                        <h3 class="font_size_increase">EDUCATION</h3>
+                        <hr class="summary_hr_size_increase">
+                        <div class="education_summary">
+                            <!-- <div class="flex_data">
+                                <ul>
+                                    <li class="pasteText_job_title_education">SDE at Amazon</li>
+                                </ul> 
+                                <span>
+                                    <span id="start_Date_education">11-04-2023</span>
+                                    <span id="end_Date_education">11-04-2023</span>
+                                </span>
+                            </div><br>
+                            <label class="pasteText_education">SDE</label><br><br>
+                            <label class="pasteText_description_education">can Write Anything</label> -->
+                        </div>
+                        <!-- education container end -->
+                    </div>
+                </div>
+                <!-- skill And Summary part end-->
+            </div>
+            <!-- dataOfEmployee end -->
+        </div>
+    </div>
+    <!-- main container end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
+    <script src="./script.js"></script>
+</body>
+</html>

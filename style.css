@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-family: sans-serif;
+}
+
+/* navbar section start */
+.navbar{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    height: 2.7rem;
+    align-items: center;
+}
+.dwn{
+    padding: 0;
+}
+.navbar button{
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #18A60E;
+    border: none;
+    width: 8rem;
+}
+#img_color{
+    color: white;
+}
+/* navbar section end */
+
+/* two section start */
+.two_section{
+    width: 100%;
+    display: flex;
+    background-color: rgb(237, 233, 233);
+}
+
+
+/* template-type start */
+.template-type{
+    padding-left: 1rem;
+    /* border: 2px solid red; */
+    width: 33%;
+}
+.template-type-name{
+    font-size: 18px;
+    font-weight: 600;
+}
+#select_two_items{
+    margin-top: 0.5rem;
+    padding: 3px 1px;
+    border-radius: 3px;
+    width: 100%;
+    border: 2px solid skyblue;
+}
+.header_color{
+    margin-block: 0.5rem;
+    font-size: 14px;
+}
+.header_text{
+    font-size: 14px;
+}
+.colorid{
+    border: none;
+    margin-top: 0.3rem;
+}
+.textid{
+    border: none;
+    margin-top: 0.3rem;
+}
+.personal_details{
+    font-size: 16px;
+    word-spacing: 0.5rem;
+}
+.template-type form input{
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 6px;
+    margin-block: 0.3rem;
+}
+.profess_details{
+    font-size: 16px;
+    word-spacing: 0.5rem;
+}
+.profess_details_inputs{
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 6px;
+    margin-block: 0.3rem;
+}
+.add_employee{
+    margin-block: 0.3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    color: white;
+    background-color: green;
+}
+.add_project{
+    margin-block: 0.3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    color: white;
+    background-color: green;
+}
+.edu_text_color{
+    font-weight: 550;
+}
+.add_education{
+    margin-block: 0.3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    color: white;
+    background-color: green;
+}
+/* template-type end */
+
+/* dataOfEmployee start */
+.dataOfEmployee{
+    border-radius: 2px;
+    box-shadow: 0 0 2px grey;
+    /* border: 2px solid red; */
+    width: 48%;
+}
+
+/* brown start */
+.brown_color_box{
+    width: 142.5%;
+    padding-left: 13rem;
+    color: #ffffff;
+    height: 100px;
+    background-color: brown;
+}
+.heading1{
+    padding: 12px;
+}
+.heading3{
+    padding-left: 14px;
+}
+/* brown end */
+.skillAndSummarypart{
+    display: flex;
+}
+/* skill start */
+.skill_back_color{
+    /* border: 1px solid blue; */
+    width: 30%;
+    margin:1rem 0rem 0rem 1rem
+}
+.skill_back_color span{
+    font-size: 13px;
+}
+.font_size_increase{
+    margin-top: 0.7rem;
+    font-weight: 600;
+    font-size: 17px;
+}
+.skill_hr_size_increase{
+    width: 95%;
+    margin-block: 0.3rem;
+}
+.gap_into_detail{
+    margin-block: 0.2rem;
+}
+.profressional_form_skills_data{
+    font-size: 13px;
+}
+#showOne{
+    width: 67%;
+}
+#showTwo{
+    width: 67%;
+}
+/* skill end */
+
+/* summary sec start */
+#showOne .summary_back_color{
+    background-color: white;
+    border: 1px solid green;
+    width: 142.5%;
+    border: none;
+    padding: 1rem 0rem 0rem 1rem;
+}
+#showTwo .summary_back_color{
+    background-color: white;
+    border: 1px solid green;
+    width: 100%;
+    border: none;
+    padding: 1rem 0rem 0rem 1rem;
+}
+.summary_hr_size_increase{
+    width:95%;
+}
+.profeessional_textarea_data{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin-block: 0.5rem;
+}
+.summary_hr_size_increase{
+    margin-block: 0.5rem;
+}
+/* PROFESSIONAL EXPERIENCE container start  */
+.pasteText_job_title_employeement{
+    margin-left: 1rem;
+    font-size: 14px;
+}
+.pasteText_employer{
+    font-size: 14px;
+}
+.pasteText_description_employeement{
+    font-size: 16px;
+}
+.flex_data{
+    justify-content: space-between;
+    font-size: 14px;
+    display:flex;
+}
+.flex_data .start_Date{
+    padding-right: 0.5rem;
+}
+.flex_data .end_Date{
+    margin-right: 28rem;
+}
+#showOne .PhoneEmailLoca{
+    margin-left: 5rem;
+}
+#showOne .brown_color_box{
+    width: 142.5%;
+    /* justify-content: space-between; */
+    display: flex;
+    color: #ffffff;
+    height: 100px;
+    background-color: brown;
+}
+#showOne .skillAndSummarypart{
+    display: flex;
+    width: 142.5%;
+}
+#showTwo .skillAndSummarypart{
+    display: flex;
+    width: 142.5%;
+}
+.skill_back_color{
+    /* border: 1px solid blue; */
+    width:20%;
+    margin:1rem 0rem 0rem 1rem
+}
+/* PROFESSIONAL EXPERIENCE container end */
+
+/* project container start */
+.pasteText_job_title_project{
+    margin-left: 1rem;
+    font-size: 14px;
+}
+.pasteText_project{
+    font-size: 14px;
+}
+.flex_data{
+    justify-content: space-between;
+    font-size: 14px;
+    display:flex;
+}
+.start_Date_project{
+    font-size: 14px;
+    padding-right: 0.5rem;
+}
+.end_Date_project{
+    font-size: 14px;
+    margin-right: 28rem;
+}
+/* project container end */
+
+/* education container start */
+.pasteText_job_title_education{
+    margin-left: 1rem;
+    font-size: 14px;
+}
+.pasteText_education{
+    font-size: 14px;
+}
+.pasteText_description_education{
+    font-size: 16px;
+}
+.flex_data{
+    justify-content: space-between;
+    font-size: 14px;
+    display:flex;
+}
+.start_Date_education{
+    font-size: 14px;
+    padding-right: 0.5rem;
+}
+.end_Date_education{
+    font-size: 14px;
+    margin-right: 28rem;
+}
+/* education container start */
+
+/* summary sec end */
+/* dataOfEmployee end */
+/* two section end */
+
+/* input date add employment start */
+.add_employee{
+    margin-top: 1.2rem;
+}
+#start_date_add_employee{
+    margin-block: 5px;
+    padding: 4px;
+    border: none;
+    width: 100%;
+}
+#end_date_add_employee{
+    margin-block: 0.3rem;
+    padding: 4px;
+    border: none;
+    width: 100%;
+}
+
+.add_employee_form label{
+    font-size: 14px;
+}
+#job_title_employeement{
+    margin-block: 0.3rem;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+}
+#employer_employeement{
+    margin-block: 0.3rem;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+}
+#employment_description{
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 6px;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+/* input date add employment end */
+
+/* input date add project start */
+#start_date_add_project{
+    margin-block: 5px;
+    padding: 4px;
+    border: none;
+    width: 100%;
+}
+#end_date_add_project{
+    margin-block: 0.3rem;
+    padding: 4px;
+    border: none;
+    width: 100%;
+}
+
+.add_project_form label{
+    font-size: 14px;
+}
+#project_title{
+    margin-block: 0.3rem;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+}
+#project_description{
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 6px;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+/* input date add project end */
+
+/* add education start */
+#start_date_add_education{
+    margin-block: 5px;
+    padding: 4px;
+    border: none;
+    width: 100%;
+}
+#end_date_add_education{
+    margin-block: 0.3rem;
+    padding: 4px;
+    border: none;
+    width: 100%;
+}
+
+.add_education_form label{
+    font-size: 14px;
+}
+#education_qualification{
+    margin-block: 0.3rem;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+}
+#education_school{
+    margin-block: 0.3rem;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+}
+#education_description{
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 6px;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+/* add education end */
