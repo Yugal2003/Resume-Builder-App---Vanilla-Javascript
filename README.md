@@ -1,3 +1,4 @@
+<a href="https://resume-builder-app-vanilla-javascript.vercel.app/">LIVE</a>
 <h1>Project Overview :</h1>
 
 <ul>
